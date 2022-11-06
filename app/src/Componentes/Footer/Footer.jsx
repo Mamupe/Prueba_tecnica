@@ -20,7 +20,7 @@ export const Footer = () => {
         <li> &nbsp;&nbsp;Help &nbsp;|</li>
         <li>&nbsp;&nbsp;Manage Account </li>
       </ul>
-      <p>Copyrght© 2016 Streaming. All Rights Reserved</p>
+      <p>Copyrght© 2016 Streaming. All Rights Reserved.</p>
       <div className="socialStore">
         <div className="divSocial">
           <img className="social" src={facebook} alt="facebook" />

@@ -8,7 +8,7 @@ export const Peliculas = () => {
   return (
     <div>
       <div className="popularM">
-        <h2>Popular Series</h2>
+        <h2>Popular Movies</h2>
       </div>
       <div className="moviesContainer">
         <GetMovies />
