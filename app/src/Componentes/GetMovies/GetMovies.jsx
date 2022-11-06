@@ -2,6 +2,7 @@ import './GetMovies.css';
 
 import React, { Suspense } from 'react';
 import { useEffect, useState } from 'react';
+import Popup from 'reactjs-popup';
 
 export const GetMovies = () => {
   const [moviesList, setMoviesList] = useState([]);
@@ -21,15 +22,25 @@ export const GetMovies = () => {
     return 0;
   });
 
-  let filteredMovies = listaMovies.filter(movie => movie.releaseYear >= "2010")
+  let filteredMovies = listaMovies.filter((movie) => movie.releaseYear >= '2010');
+  let filterTwenty = filteredMovies.filter((item, i) => i < 20);
 
   return (
     <>
-      {filteredMovies.map((movie) => (
+      {filterTwenty.map((movie) => (
         <div className="divMoviesCont" key={movie.title}>
           <img className="imgMovies" src={movie.images['Poster Art'].url} />
-          <h3>{movie.title}</h3>
-          
+          <Popup trigger={<button className="btn">{movie.title}</button>} modal nested>
+            {(close) => (
+              <div className="pop">
+                <h2>{movie.title}</h2>
+                <p>{movie.description}</p>
+                <h3>Year: {movie.releaseYear}</h3>
+                <img className="imgSeries" src={movie.images['Poster Art'].url} />
+                <button onClick={(e) => close()}>X</button>
+              </div>
+            )}
+          </Popup>
         </div>
       ))}
     </>

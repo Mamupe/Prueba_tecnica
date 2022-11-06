@@ -26,20 +26,23 @@ export const GetSeries = () => {
   });
 
   let filteredSeries = listaSeries.filter((serie) => serie.releaseYear >= '2010');
-  /*   let filterTwenty = filteredSeries.filter(filteredSeries => filteredSeries.length === 20);  */
+  let filterTwenty = filteredSeries.filter((item, i) => i < 20);
 
   return (
     <>
-      {filteredSeries.map((serie) => (
+      {filterTwenty.map((serie) => (
         <div className="divSeriesCont" key={serie.title}>
           <img className="imgSeries" src={serie.images['Poster Art'].url} />
-          <Popup trigger={<button className='btn'>{serie.title}</button>}>
-            <div className="pop">
-              <h2>{serie.title}</h2>
-              <p>{serie.description}</p>
-              <h3>Year: {serie.releaseYear}</h3>
-              <img className="imgSeries" src={serie.images['Poster Art'].url} />
-            </div>
+          <Popup trigger={<button className="btn">{serie.title}</button>} modal nested>
+            {(close) => (
+              <div className="pop">
+                <h2>{serie.title}</h2>
+                <p>{serie.description}</p>
+                <h3>Year: {serie.releaseYear}</h3>
+                <img className="imgSeries" src={serie.images['Poster Art'].url} />
+                <button onClick={(e) => close()}>X</button>
+              </div>
+            )}
           </Popup>
         </div>
       ))}

@@ -21,15 +21,17 @@ export const Footer = () => {
         <li>&nbsp;&nbsp;Manage Account </li>
       </ul>
       <p>Copyrght© 2016 Streaming. All Rights Reserved</p>
-      <div className="divSocial">
-        <img className="social" src={facebook} alt="facebook" />
-        <img className="social" src={twitter} alt="twitter" />
-        <img className="social" src={instagram} alt="instagram" />
-      </div>
-      <div className="divStore">
-        <img className="store" src={microsoft} alt="microsoft" />
-        <img className="store" src={googleplay} alt="googleplay" />
-        <img className="store" src={appStore} alt="appstore" />
+      <div className="socialStore">
+        <div className="divSocial">
+          <img className="social" src={facebook} alt="facebook" />
+          <img className="social" src={twitter} alt="twitter" />
+          <img className="social" src={instagram} alt="instagram" />
+        </div>
+        <div className="divStore">
+          <img className="store" src={microsoft} alt="microsoft" />
+          <img className="store" src={googleplay} alt="googleplay" />
+          <img className="store" src={appStore} alt="appstore" />
+        </div>
       </div>
     </div>
   );

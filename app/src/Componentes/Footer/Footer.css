@@ -21,6 +21,12 @@
     color:rgba(245, 245, 245, 0.758);
     padding-bottom: 2rem;
 } 
+
+.socialStore{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .divSocial {
     display: flex;
     flex-wrap: wrap;
