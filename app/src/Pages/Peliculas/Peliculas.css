@@ -1,0 +1,31 @@
+.moviesContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    margin: 5rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+.popularM {
+    display: flex;
+ 
+    height: 3rem;
+    
+    background-color: #414141;
+    margin-bottom: 2rem;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.popularM > h2 {
+    
+    margin-left: 7rem;
+    color: whitesmoke;
+    
+}

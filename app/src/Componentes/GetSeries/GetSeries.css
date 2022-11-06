@@ -1,0 +1,23 @@
+.divSeriesCont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: center;
+    margin: -15px;
+    height: 300px;
+    width: 165px;
+    
+}
+
+.imgSeries {
+    height: 265px;
+    width: 165px;
+    
+}
+.divSeriesCont > h3 {
+    font-size: smaller;
+    margin-top: 0;
+}
+
+

@@ -1,0 +1,66 @@
+.containerIni{
+    height: 65vh;;
+}
+.popular {
+    display: flex;
+    height: 3rem;
+    margin-top: -20px;
+    background-color: #414141;
+    margin-bottom: 2rem;
+    margin-top: 0px;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.popular > h2 {
+    
+    margin-left: 7rem;
+    color: whitesmoke;
+    
+}
+
+.divContainerItems {
+    display: flex;
+    flex-direction: row;
+    margin-left: 7rem;
+    
+    font-size: small;
+    color: black;
+}
+
+.divContainerItems > a {
+    text-decoration: none;
+}
+.divSeries {
+    height: 200px;
+    width: 125px;
+    padding-right: 1rem;
+    
+}
+
+
+.divPelis {
+    height: 200px;
+    width: 125px;
+}
+
+.imgSerie {
+    height: 200px;
+    width: 125px;
+}
+.divSeries:hover {
+    opacity: 0.8;
+    border: solid white 3px;
+}
+.divPelis:hover {
+    opacity: 0.8;
+    border: solid white 3px;
+}
+
+
+
+.imgMovie {
+    height: 200px;
+    width: 125px;
+}

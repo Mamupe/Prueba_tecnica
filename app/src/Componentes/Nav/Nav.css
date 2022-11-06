@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+    height: 55px;
+    align-items: center;
+    
+    background-color: #006FFF;
+}
+
+.demo {
+    margin-left: 7rem;
+}
+
+.demo > a  {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+}
+
+.logReg {
+    display: flex;
+    flex-direction: row;
+    margin-right: 7rem;
+}
+.divLogin {
+    padding-left:3rem;
+    padding-right: 3rem;
+}
+.divLogin {
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
+    font-size: small;
+}
+
+.divRegister {
+    display: flex;
+    margin-right: 3rem;
+    height: 30px;
+    width: 145px;
+    background-color: #3D3E40;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: whitesmoke;
+    
+    font-size:small;
+}
+
