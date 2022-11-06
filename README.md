@@ -24,3 +24,4 @@ El primer problema que encontré fue al levantar el .json, daba un error que sol
 
     En cuanto a la página de carga, aún que he estado investigando no he tenido el tiempo suficiente para poder mirarlo y entenderlo 100%.
     Como pequeña mejora, he añadido un Navlink a Demo Streaming (nav) para poder volver a la página inicio al clicar.
+    Sólamente había 7 series y 1 pelicula con la url de la imagen rota, como eran pocas he cambiado las url en data.json para que las pintase.
