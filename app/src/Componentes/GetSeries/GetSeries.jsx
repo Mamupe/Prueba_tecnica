@@ -2,6 +2,7 @@ import './GetSeries.css';
 
 import React from 'react';
 import { useEffect, useState } from 'react';
+import Popup from 'reactjs-popup';
 
 import Loading from '../../Componentes/Loading/Loading';
 
@@ -32,7 +33,14 @@ export const GetSeries = () => {
       {filteredSeries.map((serie) => (
         <div className="divSeriesCont" key={serie.title}>
           <img className="imgSeries" src={serie.images['Poster Art'].url} />
-          <h3>{serie.title}</h3>
+          <Popup trigger={<button className='btn'>{serie.title}</button>}>
+            <div className="pop">
+              <h2>{serie.title}</h2>
+              <p>{serie.description}</p>
+              <h3>Year: {serie.releaseYear}</h3>
+              <img className="imgSeries" src={serie.images['Poster Art'].url} />
+            </div>
+          </Popup>
         </div>
       ))}
     </>
