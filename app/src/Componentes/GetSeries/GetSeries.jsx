@@ -11,9 +11,9 @@ export const GetSeries = () => {
 
   useEffect(() => {
     (async () => {
-      let data = await fetch('http://localhost:8080/entries?programType=series').then(
-        (res) => res.json(),
-      );
+      let data = await fetch(
+        'https://series-moviles-server-a7vf.onrender.com/entries?programType=series',
+      ).then((res) => res.json());
       setSeriesList(data);
     })();
   }, []);
